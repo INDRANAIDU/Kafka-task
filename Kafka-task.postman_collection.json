@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "0b9f672a-e61c-455b-8481-64b91b59b015",
+		"name": "Kafka-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44741528",
+		"_collection_link": "https://indrakumar-2227400.postman.co/workspace/indra-kumar's-Workspace~bc8202d7-92ca-4750-8fae-5a3aa03d90c9/collection/44741528-0b9f672a-e61c-455b-8481-64b91b59b015?action=share&source=collection_link&creator=44741528"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8088/send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fromID",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "toID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Bruno started following you.",
+							"type": "text"
+						},
+						{
+							"key": "fromID",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "toID",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "message",
+							"value": "'Great seeing you yesterday, @Bruno!'",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "fromID",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "toID",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "message",
+							"value": "Lena liked your post: 'My weekend getaway!'",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "fromID",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "toID",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "message",
+							"value": "Thankyou Rick.",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8088/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/notifications/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/notifications/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"notifications",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/notifications/2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/notifications/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"notifications",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/notifications/3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/notifications/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"notifications",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
